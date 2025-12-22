@@ -3,48 +3,42 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
+# 언어 설정 (한국어로 변경)
+lang: ko
 
-# Change to your timezone › https://zones.arilyn.cc
-timezone:
+# 시간대 설정 (서울)
+timezone: Asia/Seoul
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# jekyll-seo-tag settings
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: hwaserbit Log  # 사이트 탭과 메인에 뜰 제목
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: 친절한? 서버 엔지니어의 기록 # 사이트 부제 (한 줄 소개)
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >- # 검색 엔진과 SNS 미리보기에 뜰 설명
+  서버 인프라, 백엔드, 그리고 트러블 슈팅을 기록하는 hwaserbit의 기술 블로그입니다.
 
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+# 사이트 주소 (가장 중요!)
+url: "https://hwaserbit.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: hwaserbit # 깃허브 아이디
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: # 트위터 없으면 비워두세요
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  # 푸터(바닥글)에 표시될 이름
+  name: hwaserbit
+  email: hwaserbit@gmail.com
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    # 첫 번째 링크는 저작권자 링크로 사용됩니다.
+    - https://github.com/hwaserbit # 깃허브 주소
+    # - https://twitter.com/username # 트위터 있으면 주석(#) 풀고 입력
+    # - https://www.linkedin.com/in/username # 링크드인 있으면 입력
 
-# Site Verification Settings
+# 검색 엔진 등록용 코드 (나중에 구글 서치 콘솔 등록할 때 입력하세요. 지금은 비워둬도 됨)
 webmaster_verifications:
   google: # fill in your Google verification code
   bing: # fill in your Bing verification code
@@ -56,7 +50,7 @@ webmaster_verifications:
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-# Web Analytics Settings
+# 방문자 분석 도구 (나중에 설정, 지금은 비워둠)
 analytics:
   google:
     id: # fill in your Google Analytics ID
@@ -77,47 +71,33 @@ analytics:
 pageviews:
   provider: # now only supports 'goatcounter'
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
-#
-theme_mode: # [light | dark]
+# 테마 색상 설정
+# light: 밝은 모드 / dark: 다크 모드
+# 비워두면 시스템 설정 따라가지만, 서버 엔지니어 느낌을 위해 'dark' 추천
+theme_mode: dark
 
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
+# 미디어 리소스용 CDN (보통 비워둡니다)
 cdn:
 
-# the avatar on sidebar, support local or CORS resources
-avatar:
+# 프로필 사진 (왼쪽 사이드바)
+# 아까 만든 로고 이미지를 assets/img 폴더에 넣고 파일명을 avatar.png로 하거나 아래 경로 수정
+avatar: /assets/img/avatar.png
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
+# SNS 공유 시 썸네일 이미지
 social_preview_image: # string, local or CORS resources
 
-# boolean type, the global switch for TOC in posts.
+# 글 목차(TOC) 표시 여부 (기술 블로그는 true 필수)
 toc: true
 
+# 댓글 시스템 설정
+# Giscus(깃허브 연동 댓글)를 가장 추천합니다. 나중에 설정 필요.
 comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
+    shortname: # fill with the Disqus shortname.
   utterances:
     repo: # <gh-username>/<repo>
     issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
     repo_id:
@@ -129,30 +109,27 @@ comments:
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+# 정적 자산 호스팅 (건드리지 않아도 됨)
 assets:
   self_host:
     enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]
 
+# PWA (앱처럼 설치 기능) - 켜두는 게 좋음
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: true
   cache:
-    enabled: true # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
+    enabled: true
     deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+      # - "/example"
 
+# 한 페이지당 글 개수
 paginate: 10
 
-# The base URL of your site
+# 사이트 기본 URL 경로 (GitHub Pages는 보통 비워둠)
 baseurl: ""
 
-# ------------ The following options are not recommended to be modified ------------------
+# ------------ 이 아래는 건드리지 마세요 (시스템 설정) ------------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
