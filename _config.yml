@@ -80,8 +80,7 @@ theme_mode: dark
 cdn:
 
 # 프로필 사진 (왼쪽 사이드바)
-# 아까 만든 로고 이미지를 assets/img 폴더에 넣고 파일명을 avatar.png로 하거나 아래 경로 수정
-avatar: /assets/img/avatar.png
+avatar: /assets/img/1.png
 
 # SNS 공유 시 썸네일 이미지
 social_preview_image: # string, local or CORS resources
