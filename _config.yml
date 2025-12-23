@@ -1,110 +1,154 @@
-# The Site Configuration
+# 사이트 구성
 
-# Import the theme
+# 가져오는 테마
 theme: jekyll-theme-chirpy
 
+# 웹페이지 언어 › http://www.lingoes.net/en/translator/langcode.htm
+# `_data/locales` 폴더에 있는 파일 중 하나와 이름이 같으면 레이아웃 언어도 변경됩니다.
+# 그렇지 않으면 레이아웃 언어는 기본값인 'en'을 사용합니다.
 # 언어 설정
-lang: ko
+lang: ko-KR
 
-# 시간대 설정
+# 시간대 변경하기 › https://zones.arilyn.cc
 timezone: Asia/Seoul
 
-# jekyll-seo-tag settings
+# jekyll-seo-tag 설정 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: hwaserbit Log
-tagline: 친절한 서버 엔지니어의 기록
-description: >-
+title: hwaserbit # 메인 타이틀
+tagline: 친절한? 서버 엔지니어의 기록 # 이 서브 타이틀이 보여질 예정입니다.
+description: >- # SEO 메타 및 아톰 피드에서 사용됨
   서버 인프라, 백엔드, 그리고 트러블 슈팅을 기록하는 hwaserbit의 기술 블로그입니다.
 
-# 사이트 주소
+# 사이트의 프로토콜과 호스트 이름을 입력하세요.
+# 예: 'https://username.github.io', '/'로 끝나지 않아야 합니다.
 url: "https://hwaserbit.github.io"
 
 github:
-  username: hwaserbit
+  username: hwaserbit # 너의 깃허브 사용자 명으로 변경하세요.
 
 twitter:
-  username:
+  username: @hwaserbit # 너의 트위터(X) 사용자 명으로 변경하세요.
 
+# 본인의 전체 이름으로 변경하세요.
+# 이 이름은 게시물의 기본 작성자 및 바닥글의 저작권 소유자로 표시됩니다.
 social:
-  name: hwaserbit
-  email: hwaserbit@gmail.com
+  name: SimHwaseop
+  email: hwaserbit@gmail.com # 본인의 이메일 주소로 변경하세요.
   links:
-    - https://github.com/hwaserbit
+    # 첫 번째 요소는 저작권 소유자의 링크입니다.
+    - https://twitter.com/hwaserbit # 트위터 홈페이지로 변경하세요.
+    - https://github.com/hwaserbit # GitHub 홈페이지로 변경하세요.
+    # 아래 주석을 해제하면 소셜 미디어 링크를 추가할 수 있습니다.
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
 
+# 사이트 인증 설정
 webmaster_verifications:
-  google:
-  bing:
-  alexa:
-  yandex:
-  baidu:
-  facebook:
+  google: # Google 인증 코드를 입력하세요
+  bing: # Bing 인증 코드를 입력하세요
+  alexa: # Alexa 인증 코드를 입력하세요
+  yandex: # Yandex 인증 코드를 입력하세요
+  baidu: # Baidu 인증 코드를 입력하세요
+  facebook: # Facebook 인증 코드를 입력하세요
 
 # ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# `jekyll-seo-tag` 설정 마지막
 
+# 웹 분석 설정
 analytics:
-  google:
-    id:
-  goatcounter:
-    id:
-  umami:
-    id:
-    domain:
-  matomo:
-    id:
-    domain:
-  cloudflare:
-    id:
-  fathom:
-    id:
 
+google:
+  id: # Google Analytics ID를 입력하세요
+goatcounter:
+  id: # GoatCounter ID를 입력하세요
+umami:
+  id: # Umami ID를 입력하세요
+  domain: # Umami 도메인을 입력하세요
+matomo:
+  id: # Matomo ID를 입력하세요
+  domain: # Matomo 도메인을 입력하세요
+cloudflare:
+  id: # Cloudflare 웹 분석 토큰을 ​​입력하세요
+fathom:
+  id: # Fathom 사이트 ID를 입력하세요
+
+# 페이지 조회수 설정
 pageviews:
-  provider:
+  provider: # 현재 'goatcounter'만 지원합니다
 
-# 테마 색상 (dark 고정)
-theme_mode: dark
+# 선호하는 색 구성표 설정입니다.
+#
+# 참고: 비워두면 시스템에서 기본적으로 선호하는 색상이 적용됩니다.
+# 또한 사이드바 왼쪽 하단에 어두운 테마와 밝은 테마를 전환할 수 있는 토글 버튼이 표시됩니다.
+#
+# 사용 가능한 옵션:
+#
+# 밝은 — 밝은 색 구성표 사용
+# 어두운 — 어두운 색 구성표 사용
+#
+theme_mode: # [light | dark]
 
-cdn:
+# 미디어 리소스용 CDN 엔드포인트입니다.
+# CDN URL이 할당되면
+# 모든 미디어 리소스(사이트 아바타, 게시물 이미지, 오디오 및 비디오 파일)의 '/'로 시작하는 경로에 추가됩니다.
+#
+# 예: 'https://cdn.com'
+cdn: # "https://chirpy-img.netlify.app"
 
-# 프로필 사진 (아까 1.png로 올리셨다고 해서 반영했습니다)
-avatar: /assets/img/1.png
+# 사이드바의 아바타(avatar), 로컬 또는 CORS 리소스 지원
+avatar: "/commons/avatar.png"
+#avatar: /assets/img/1.png
 
-social_preview_image:
+# SEO `og:image` 메타 태그에 사용되는 사이트 전체 소셜 미리보기 이미지의 URL입니다.
+# 프런트 매터에서 사용자 지정 `page.image`로 재정의할 수 있습니다.
+social_preview_image: # 문자열, 로컬 또는 CORS 리소스
 
+# 부울 타입, 게시물 목차(TOC) 표시 여부를 결정하는 전역 스위치입니다.
 toc: true
 
 comments:
-  provider:
+  # 게시물 댓글 시스템을 활성화/비워두는 전역 스위치입니다. 비워두면 비활성화됩니다.
+  provider: # [disqus | utterances | giscus]
+  # 제공업체 옵션은 다음과 같습니다.
   disqus:
-    shortname:
+    shortname: # Disqus 단축 이름을 입력하세요. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances 설정 › https://utteranc.es/
   utterances:
-    repo:
-    issue_term:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  # Giscus 옵션 › https://giscus.app
   giscus:
-    repo:
+    repo: # <gh-username>/<repo>
     repo_id:
     category:
     category_id:
-    mapping:
-    strict:
-    input_position:
-    lang:
-    reactions_enabled:
+    mapping: # 선택 사항, 기본값은 'pathname'
+    strict: # 선택 사항, 기본값은 '0'
+    input_position: # 선택 사항, 기본값은 'bottom'
+    lang: # 선택 사항, 기본값은 `site.lang` 값
+    reactions_enabled: # 선택 사항, 기본값은 `1`
 
+# 자체 호스팅 정적 자산(선택 사항) › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled:
-    env:
+    enabled: # 부울 값, 비워두면 false
+    # Jekyll 환경을 지정합니다. 비워두면 둘 다 해당
+    # `assets.self_host.enabled`가 'true'인 경우에만 작동합니다.
+    env: # [개발 | 프로덕션]
 
 pwa:
-  enabled: true
+  enabled: true # PWA 기능(설치 가능) 사용 옵션
   cache:
-    enabled: true
+    enabled: true # PWA 오프라인 캐시 사용 옵션
+    # 여기에 정의된 경로는 PWA 캐시에서 제외됩니다.
+    # 일반적으로 이 값은 현재 웹사이트와 동일한 도메인 이름을 가진 다른 웹사이트의 `baseurl`입니다.
     deny_paths:
+      # - "/example" # `<SITE_URL>/example/*`와 일치하는 URL은 PWA에서 캐시되지 않습니다.
 
 paginate: 10
 
+# 사이트의 기본 URL
 baseurl: ""
 
 # ------------ 이 아래는 건드리지 마세요 ------------------
@@ -112,8 +156,9 @@ baseurl: ""
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
+  syntax_highlighter_opts: # Rouge 옵션 › https://github.com/jneen/rouge#full-options
     css_class: highlight
+    # default_lang: console
     span:
       line_numbers: false
     block:
@@ -127,12 +172,13 @@ collections:
 
 defaults:
   - scope:
-      path: ""
+      path: "" # 여기에 빈 문자열을 입력하면 프로젝트의 모든 파일을 의미합니다.
       type: posts
     values:
       layout: post
-      comments: true
-      toc: true
+      comments: true # 게시글에 댓글 기능을 활성화합니다.
+      toc: true # 게시글에 목차 열을 표시합니다.
+      # 이 프로젝트의 다른 모든 게시글 링크 코드를 업데이트할 수 있을 만큼 확신이 없다면 다음 매개변수를 수정하지 마십시오.
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -140,7 +186,7 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs
+      type: tabs # `site.collections` 참조
     values:
       layout: page
       permalink: /:title/
