@@ -9,7 +9,7 @@ title: About
 permalink: /about/
 ---
 
-### System Information
+### 시스템 정보
 
 터미널 환경에서 `hwaserbit`의 정보를 조회합니다.
 
@@ -31,7 +31,7 @@ root@hwaserbit:~# _
 
 ---
 
-### Contact
+### 연락처
 - Email: hwaserbit@gmail.com
 - GitHub: https://github.com/hwaserbit
 

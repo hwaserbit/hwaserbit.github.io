@@ -11,14 +11,14 @@
 ## 📝 소개 (Introduction)
 
 서버 인프라, 백엔드 개발, 그리고 개발 과정에서 마주친 트러블 슈팅 경험을 기록합니다.
-단순한 코드 저장이 아닌, **"문제 해결의 과정과 고민"**을 담는 공간을 지향합니다.
+단순한 코드 저장이 아닌, **\"문제 해결의 과정과 고민\"**을 담는 공간을 지향합니다.
 
 ## 🛠️ 기술 스택 (Tech Stack)
 
-* **Generator:** Jekyll (Static Site Generator)
-* **Theme:** [Chirpy Starter][chirpy-starter]
-* **Hosting:** GitHub Pages & Actions
-* **Comment:** Giscus (예정)
+#* **Generator:** Jekyll (Static Site Generator)
+#* **Theme:** [Chirpy Starter][chirpy-starter]
+#* **Hosting:** GitHub Pages & Actions
+#* **Comment:** Giscus (예정)
 
 ## 📂 디렉토리 구조 (Structure)
 
@@ -50,4 +50,4 @@
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
 
 ---
-이 문서는 제미나이를 통해 수정된 문서로 문서상 문법 오류가 있을수 있습니다.
+이 문서는 제미나이를 통해 수정된 문서로 문법 오류가 있을 수 있습니다.
