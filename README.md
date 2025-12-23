@@ -49,5 +49,5 @@
 [CD]: https://en.wikipedia.org/wiki/Continuous_deployment
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
 
-
+---
 이 문서는 제미나이를 통해 수정된 문서로 문서상 문법 오류가 있을수 있습니다.

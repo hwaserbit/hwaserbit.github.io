@@ -5,7 +5,7 @@ icon: fas fa-info-circle
 order: 4
 
 # The customized settings
-# title: About (제목을 비워두면 깔끔합니다)
+title: About
 permalink: /about/
 ---
 
@@ -28,4 +28,3 @@ Status     : 모든 시스템 정상 작동 중. 당신과 연결할 준비 완�
 
 root@hwaserbit:~# _
 ```
----
