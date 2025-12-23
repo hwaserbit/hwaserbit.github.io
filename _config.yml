@@ -3,139 +3,117 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# 언어 설정 (한국어로 변경)
+# 언어 설정
 lang: ko
 
-# 시간대 설정 (서울)
+# 시간대 설정
 timezone: Asia/Seoul
 
 # jekyll-seo-tag settings
 # ↓ --------------------------
 
-title: hwaserbit Log  # 사이트 탭과 메인에 뜰 제목
-
-tagline: 친절한? 서버 엔지니어의 기록 # 사이트 부제 (한 줄 소개)
-
-description: >- # 검색 엔진과 SNS 미리보기에 뜰 설명
+title: hwaserbit Log
+tagline: 친절한 서버 엔지니어의 기록
+description: >-
   서버 인프라, 백엔드, 그리고 트러블 슈팅을 기록하는 hwaserbit의 기술 블로그입니다.
 
-# 사이트 주소 (가장 중요!)
+# 사이트 주소
 url: "https://hwaserbit.github.io"
 
 github:
-  username: hwaserbit # 깃허브 아이디
+  username: hwaserbit
 
 twitter:
-  username: # 트위터 없으면 비워두세요
+  username:
 
 social:
-  # 푸터(바닥글)에 표시될 이름
   name: hwaserbit
   email: hwaserbit@gmail.com
   links:
-    # 첫 번째 링크는 저작권자 링크로 사용됩니다.
-    - https://github.com/hwaserbit # 깃허브 주소
-    # - https://twitter.com/username # 트위터 있으면 주석(#) 풀고 입력
-    # - https://www.linkedin.com/in/username # 링크드인 있으면 입력
+    - https://github.com/hwaserbit
 
-# 검색 엔진 등록용 코드 (나중에 구글 서치 콘솔 등록할 때 입력하세요. 지금은 비워둬도 됨)
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-# 방문자 분석 도구 (나중에 설정, 지금은 비워둠)
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id:
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id:
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id:
+    domain:
   matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
+    id:
+    domain:
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id:
   fathom:
-    id: # fill in your Fathom Site ID
+    id:
 
-# Page views settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider:
 
-# 테마 색상 설정
-# light: 밝은 모드 / dark: 다크 모드
-# 비워두면 시스템 설정 따라가지만, 서버 엔지니어 느낌을 위해 'dark' 추천
+# 테마 색상 (dark 고정)
 theme_mode: dark
 
-# 미디어 리소스용 CDN (보통 비워둡니다)
 cdn:
 
-# 프로필 사진 (왼쪽 사이드바)
+# 프로필 사진 (아까 1.png로 올리셨다고 해서 반영했습니다)
 avatar: /assets/img/1.png
 
-# SNS 공유 시 썸네일 이미지
-social_preview_image: # string, local or CORS resources
+social_preview_image:
 
-# 글 목차(TOC) 표시 여부 (기술 블로그는 true 필수)
 toc: true
 
-# 댓글 시스템 설정
-# Giscus(깃허브 연동 댓글)를 가장 추천합니다. 나중에 설정 필요.
 comments:
-  provider: # [disqus | utterances | giscus]
+  provider:
   disqus:
-    shortname: # fill with the Disqus shortname.
+    shortname:
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo:
+    issue_term:
   giscus:
-    repo: # <gh-username>/<repo>
+    repo:
     repo_id:
     category:
     category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    mapping:
+    strict:
+    input_position:
+    lang:
+    reactions_enabled:
 
-# 정적 자산 호스팅 (건드리지 않아도 됨)
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
-    env: # [development | production]
+    enabled:
+    env:
 
-# PWA (앱처럼 설치 기능) - 켜두는 게 좋음
 pwa:
   enabled: true
   cache:
     enabled: true
     deny_paths:
-      # - "/example"
 
-# 한 페이지당 글 개수
 paginate: 10
 
-# 사이트 기본 URL 경로 (GitHub Pages는 보통 비워둠)
 baseurl: ""
 
-# ------------ 이 아래는 건드리지 마세요 (시스템 설정) ------------------
+# ------------ 이 아래는 건드리지 마세요 ------------------
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
-    # default_lang: console
     span:
       line_numbers: false
     block:
@@ -149,14 +127,12 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true
+      toc: true
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -164,7 +140,7 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs
     values:
       layout: page
       permalink: /:title/
