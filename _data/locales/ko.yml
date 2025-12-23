@@ -1,7 +1,7 @@
 # _data/locales/ko.yml
 
+# 메타 태그 관련 (보통 브라우저 탭이나 검색엔진용)
 meta:
-  # 메타 태그 관련 (보통 브라우저 탭이나 검색엔진용)
   description: "hwaserbit의 기술 블로그입니다."
 
 layout:
