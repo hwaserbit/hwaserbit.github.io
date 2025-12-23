@@ -27,3 +27,4 @@ Shell      : 친절한 동료 모드 (/bin/friendly_bash)
 Status     : 모든 시스템 정상 작동 중. 당신과 연결할 준비 완료!
 
 root@hwaserbit:~# _
+```
