@@ -35,12 +35,18 @@ copyright:
     link: https://creativecommons.org/licenses/by/4.0/
 
   # Displayed in the footer
-#footer:
+# 1. 라이선스/저작권 문구는 여기서 설정합니다.
+copyright:
   brief: 일부 권리 보유
-    powered_by: "{0} 기반 {1} 테마."
   verbose: >-
     명시되지 않는 한 이 사이트의 블로그 게시물은 작성자의
     Creative Commons Attribution 4.0 International(CC BY 4.0) 라이선스에 따라 사용이 허가되었습니다.
+
+# 2. 테마 정보(Powered by)는 여기서 설정합니다.
+footer:
+  brief:
+    powered_by: "{0} 기반 {1} 테마."
+  verbose:
     using_theme: "{0} 기반의 {1} 테마를 사용 중입니다."
 
 meta: Powered by :PLATFORM with :THEME theme
