@@ -28,7 +28,7 @@ github:
   username: hwaserbit # 너의 깃허브 사용자 명으로 변경하세요.
 
 twitter:
-  username: "@hwaserbit" # 너의 트위터(X) 사용자 명으로 변경하세요.
+  username: hwaserbit # 너의 트위터(X) 사용자 명으로 변경하세요.
 
 # 본인의 전체 이름으로 변경하세요.
 # 이 이름은 게시물의 기본 작성자 및 바닥글의 저작권 소유자로 표시됩니다.
@@ -37,8 +37,8 @@ social:
   email: hwaserbit@gmail.com # 본인의 이메일 주소로 변경하세요.
   links:
     # 첫 번째 요소는 저작권 소유자의 링크입니다.
-    - https://twitter.com/hwaserbit # 트위터 홈페이지로 변경하세요.
     - https://github.com/hwaserbit # GitHub 홈페이지로 변경하세요.
+    - https://twitter.com/hwaserbit # 트위터 홈페이지로 변경하세요.
     # 아래 주석을 해제하면 소셜 미디어 링크를 추가할 수 있습니다.
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
