@@ -1,0 +1,61 @@
+# _data/locales/ko.yml
+
+meta:
+  # 메타 태그 관련 (보통 브라우저 탭이나 검색엔진용)
+  description: "hwaserbit의 기술 블로그입니다."
+
+layout:
+  # 사이드바 & 메뉴
+  post: 포스트
+  categories: 카테고리
+  tags: 태그
+  archives: 아카이브
+  about: 소개
+
+  # 페이지네이션 (글 목록 하단)
+  page: 페이지
+  prev: 이전
+  next: 다음
+
+post:
+  # 글 상세 페이지 정보
+  written_by: 작성자
+  posted: 작성일
+  updated: 수정일
+  words: 자
+  read_time: "분 분량"
+  share: 공유하기
+
+  # 목차
+  toc: 목차
+
+  # 관련 글
+  related_posts: "이런 글은 어때요?"
+
+  # 글 하단 네비게이션
+  button:
+    previous: 이전 글
+    next: 다음 글
+
+# 검색창 관련
+search:
+  hint: 검색어를 입력하세요...
+  cancel: 취소
+  no_results: 결과가 없습니다.
+
+# 404 에러 페이지
+404:
+  title: "페이지를 찾을 수 없습니다"
+  description: "주소가 잘못되었거나 삭제된 페이지입니다."
+  button: "홈으로 돌아가기"
+
+# 푸터 (바닥글)
+copyright:
+  brief: 일부 권리 보유.
+  verbose: 모든 권리 보유.
+
+footer:
+  brief:
+    powered_by: "Designed by {0}"
+  verbose:
+    using_theme: "{0} 테마 사용 중"
