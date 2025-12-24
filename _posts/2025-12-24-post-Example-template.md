@@ -116,23 +116,18 @@ $ sudo apt install docker.io
 서버 환경별로 다른 명령어를 보여줄 때 사용하세요.
 
 {% tabs os-settings %}
-
-
 {% tab os-settings Ubuntu %}
 ```Bash
 # Ubuntu/Debian 계열
 sudo apt-get install htop
 ```
 {% endtab %}
-
 {% tab os-settings CentOS %}
 ```Bash
 # RHEL/CentOS 계열
 sudo yum install htop
 ```
 {% endtab %}
-
-
 {% endtabs %}
 
 ---
