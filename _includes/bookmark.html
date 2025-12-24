@@ -1,16 +1,15 @@
-<a href="{{ include.url }}" target="_blank" class="notion-bookmark-v2">
-  <div class="bookmark-info-v2">
+<a href="{{ include.url }}" target="_blank" class="notion-bookmark-final"
+  ><div class="bookmark-info-final">
     <div class="bookmark-text-group">
-      <div class="bookmark-title-v2">{{ include.title }}</div>
-      <div class="bookmark-desc-v2">{{ include.description }}</div>
+      <div class="bookmark-title-final">{{ include.title }}</div>
+      <div class="bookmark-desc-final">{{ include.description }}</div>
     </div>
-    <div class="bookmark-meta-v2">
+    <div class="bookmark-meta-final">
       <img
         src="https://www.google.com/s2/favicons?domain={{ include.url }}"
         alt="icon"
-        class="bookmark-icon-v2"
-      />
-      <span class="bookmark-url-text-v2"
+        class="bookmark-icon-final"
+      /><span class="bookmark-url-text-final"
         >{{ include.url | remove: "https://" | remove: "http://" | split: "/" |
         first }}</span
       >
@@ -18,45 +17,45 @@
   </div>
   {% if include.image %}
   <div
-    class="bookmark-image-v2"
+    class="bookmark-image-final"
     style="background-image: url('{{ include.image }}');"
   ></div>
-  {% endif %}
-</a>
+  {% endif %}</a
+>
 
 <style>
-  /* Chirpy 테마 충돌 방지용 V2 스타일 */
-  a.notion-bookmark-v2 {
+  /* Notion Style Bookmark Final Version */
+  a.notion-bookmark-final {
     display: flex !important;
-    flex-direction: row !important;
     text-decoration: none !important;
-    background-color: var(--card-bg, #252529); /* 배경색 강제 지정 */
+    background-color: var(--card-bg, #252529);
     border: 1px solid var(--main-border-color, #38383e);
     border-radius: 6px;
     overflow: hidden;
-    margin: 1.5rem 0;
-    height: 120px; /* 높이 고정 */
+    margin: 1rem 0;
+    height: 120px !important; /* 높이 강제 고정 */
     width: 100%;
     color: var(--text-color, #c9d1d9) !important;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    box-sizing: border-box; /* 테두리 포함 크기 계산 */
   }
 
-  a.notion-bookmark-v2:hover {
+  a.notion-bookmark-final:hover {
     background-color: var(--link-hover-bg, #2a2a2e);
-    border-color: var(--link-color, #007bff);
-    transform: translateY(-2px);
-    text-decoration: none !important; /* 밑줄 강제 제거 */
+    border-color: var(--link-color, #4f8cc9);
+    text-decoration: none !important;
   }
 
-  .bookmark-info-v2 {
-    flex: 1;
-    padding: 14px;
+  .bookmark-info-final {
+    flex: 1; /* 남은 공간 모두 차지 */
+    padding: 12px 14px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* 위아래로 쫙 벌리기 */
     overflow: hidden;
-    text-align: left; /* 텍스트 강제 왼쪽 정렬 */
+    text-align: left;
+    min-width: 0; /* 텍스트 넘침 방지 필수 코드 */
   }
 
   .bookmark-text-group {
@@ -65,9 +64,9 @@
     gap: 4px;
   }
 
-  .bookmark-title-v2 {
-    font-weight: bold;
-    font-size: 1rem;
+  .bookmark-title-final {
+    font-weight: 600;
+    font-size: 0.95rem;
     color: var(--heading-color, #ffffff);
     white-space: nowrap;
     overflow: hidden;
@@ -75,42 +74,44 @@
     line-height: 1.2;
   }
 
-  .bookmark-desc-v2 {
-    font-size: 0.85rem;
+  .bookmark-desc-final {
+    font-size: 0.8rem;
     color: var(--text-muted-color, #8b949e);
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* 두 줄까지만 표시 */
+    -webkit-line-clamp: 2; /* 딱 두 줄만 표시 */
     -webkit-box-orient: vertical;
     line-height: 1.4;
     margin: 0;
   }
 
-  .bookmark-meta-v2 {
+  .bookmark-meta-final {
     display: flex;
     align-items: center;
     font-size: 0.75rem;
     color: var(--text-muted-color, #8b949e);
-    margin-top: 8px;
+    margin-top: auto; /* 무조건 바닥에 붙이기 */
+    padding-top: 6px;
   }
 
-  .bookmark-icon-v2 {
+  .bookmark-icon-final {
     width: 16px;
     height: 16px;
+    min-width: 16px; /* 찌그러짐 방지 */
     margin-right: 6px;
     border-radius: 2px;
   }
 
-  .bookmark-url-text-v2 {
+  .bookmark-url-text-final {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .bookmark-image-v2 {
-    width: 180px;
-    min-width: 180px; /* 이미지 영역 찌그러짐 방지 */
+  .bookmark-image-final {
+    width: 160px; /* 이미지 너비 고정 */
+    min-width: 160px; /* 줄어들지 않게 고정 */
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -119,12 +120,12 @@
 
   /* 모바일 화면 대응 */
   @media (max-width: 576px) {
-    .bookmark-image-v2 {
-      display: none; /* 좁은 화면에선 이미지 숨김 */
+    .bookmark-image-final {
+      display: none; /* 모바일엔 이미지 숨김 */
     }
-    a.notion-bookmark-v2 {
-      height: auto; /* 높이 자동 조절 */
-      min-height: 100px;
+    a.notion-bookmark-final {
+      height: auto !important; /* 모바일은 높이 자동 */
+      min-height: 80px;
     }
   }
 </style>
