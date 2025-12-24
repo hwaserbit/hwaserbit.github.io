@@ -18,8 +18,8 @@ root@hwaserbit:~# ./whoami.sh
 
 [SYSTEM INFO: hwaserbit]
 ---------------------------
-OS Type    : Server Infrastructure & Backend
-Hostname   : hwaserbit (화섭 + bit)
+OS Type    : #Server Infrastructure & Backend
+Hostname   : hwaserbit ( hwa + ser(server) + bit )
 Kernel     : "성실함과 꾸준함" 버전 2025.12
 Uptime     : 오늘도 성장 중... (Since 2004)
 Packages   : #Linux, AWS, Docker, Kubernetes, TroubleShooting(❤️)
