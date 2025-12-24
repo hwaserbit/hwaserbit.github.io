@@ -22,7 +22,8 @@ description: >- # SEO 메타 및 아톰 피드에서 사용됨
 
 # 사이트의 프로토콜과 호스트 이름을 입력하세요.
 # 예: 'https://username.github.io', '/'로 끝나지 않아야 합니다.
-url: "https://hwaserbit.github.io"
+url: "https://hwaserbit.com"
+#url: "https://hwaserbit.github.io"
 
 github:
   username: hwaserbit # 너의 깃허브 사용자 명으로 변경하세요.
