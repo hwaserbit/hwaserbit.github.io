@@ -2,7 +2,7 @@
 title: "마크다운 문서 작성 팁 (hwaserbit's style)"
 date: 2025-12-24 20:25:32 +0900
 categories: [Markdown]
-tags: [Tip]
+tags: [Tip, Markdown]
 description: "hwaserbit 스타일의 마크 다운 문서 작성 문법들의 모음"
 
 # 2. 고급 설정 (필요할 때만 true 또는 경로 입력)

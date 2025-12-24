@@ -2,8 +2,8 @@
 # 1. 필수 설정 (이건 꼭 수정하세요)
 title: "포스트 예시 템플릿"
 date: 2025-12-24 21:50:58 +0900
-categories: [Mmarkdown]
-tags: [Tip]
+categories: [Markdown]
+tags: [Tip, Markdown]
 description: "포스트 예시 템플릿"
 
 # 2. 고급 설정 (필요할 때만 true 또는 경로 입력)
@@ -179,8 +179,4 @@ graph TD;
 
 ---
 
-{% include bookmark.html 
-  title="마크다운 문서 작성 팁 (hwaserbit's style)" 
-  url="https://hwaserbit.com/posts/markdown-hwaserbit-writing-style" 
-  description="추가로 작성한 저의 마크다운 문서 작성 문법을 모아 놓았습니다. 혹여나 이글을 모두 읽으셨다면 도움이 될 수도 있습니다." 
-%}
+{% include bookmark.html title="마크다운 문서 작성 팁 (hwaserbit's style)" url="https://hwaserbit.com/posts/markdown-hwaserbit-writing-style" description="추가로 작성한 저의 마크다운 문서 작성 문법을 모아 놓았습니다. 혹여나 이글을 모두 읽으셨다면 도움이 될 수도 있습니다." %}
