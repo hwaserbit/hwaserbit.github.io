@@ -139,7 +139,7 @@ sudo yum install htop
 
 ## 6. 이미지와 미디어 (Media)
 ### 이미지 삽입
-![이미지 설명](/assets/img/sample.png){: width="500" height="300" .shadow }
+![이미지 설명](/assets/img/1.png){: width="300" height="300" .shadow }
 _이미지 밑에 들어가는 캡션(설명)입니다_
 
 유튜브 영상 삽입
