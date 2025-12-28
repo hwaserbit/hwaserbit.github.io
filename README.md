@@ -6,8 +6,8 @@
 **친절한 서버 엔지니어, hwaserbit의 기술 블로그 저장소입니다.**
 이 블로그는 [Jekyll](https://jekyllrb.com/)과 [Chirpy] 테마를 사용하여 구축되었습니다.
 
-> **🌐 Live Blog:** [hwaserbit.com](https://hwaserbit.com){: target="_blank" }  
-> **🌐 Live Blog:** [https://hwaserbit.github.io](https://hwaserbit.github.io){: target="_blank" }  
+> **🌐 Live Blog:** [hwaserbit.com](https://hwaserbit.com)
+> **🌐 Live Blog:** [https://hwaserbit.github.io](https://hwaserbit.github.io)
 
 ## 📝 소개 (Introduction)
 

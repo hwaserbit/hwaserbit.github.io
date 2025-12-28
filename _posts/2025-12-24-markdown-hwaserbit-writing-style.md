@@ -81,7 +81,7 @@ comments: true               # 댓글 기능 켜기/끄기
 
 
 ### 4. 새 탭으로 링크 열기 (Target Blank) 🔗
-블로그 글을 읽다가 외부 링크(공식 문서 등)를 클릭했을 때, 블로그가 닫히면 번거로우니 Chirpy(Jekyll)에서는 링크 뒤에 속성을 붙여서 새 창으로 띄울 수 있습니다.
+블로그 글을 읽다가 외부 링크(공식 문서 등)를 클릭했을 때, 블로그가 닫히면 번거로우니 `Chirpy(Jekyll)`에서는 링크 뒤에 속성을 붙여서 새 창으로 띄울 수 있습니다.
 
 ```Markdown
 [Docker 공식 문서 바로가기](https://docs.docker.com){: target="_blank" }
