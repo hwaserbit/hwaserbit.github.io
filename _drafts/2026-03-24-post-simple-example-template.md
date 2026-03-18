@@ -14,7 +14,7 @@ comments: false               # 댓글 기능 켜기/끄기
 
 ---
 
-1. 포스트 설정 (Front Matter)
+## 1. 포스트 설정 (Front Matter)
 글의 제목, 날짜, 카테고리, 태그 등 블로그 시스템이 인식해야 할 필수 메타데이터를 정의하는 영역.
 
 ```markdown
