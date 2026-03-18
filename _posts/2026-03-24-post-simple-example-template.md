@@ -16,9 +16,10 @@ comments: false               # 댓글 기능 켜기/끄기
 
 1. 포스트 설정 (Front Matter)
 글의 제목, 날짜, 카테고리, 태그 등 블로그 시스템이 인식해야 할 필수 메타데이터를 정의하는 영역.
+
 ```Markdown
 # 위 아래에 --- 있어야 적용됨. 주석으로 설정을 헤딩 하는것 같음.
----
+#---
 title: "포스트 제목"
 date: 2026-03-18 09:58:00 +0900
 categories: [Category1, Category2]
@@ -31,7 +32,7 @@ math: true                   # 수식($$)을 사용할 경우 true
 mermaid: true                # 다이어그램(flowchart)을 그릴 경우 true
 toc: true                    # 오른쪽 목차 표시 여부 (기본값 true)
 comments: false               # 댓글 기능 켜기/끄기
----
+#---
 ```
 
 ## 2. 글의 시작과 개요 (Overview)
