@@ -1,26 +1,41 @@
+---
 title: "심플 템플릿 간단 설명"
 date: 2026-03-18 09:58:00 +0900
 categories: [Markdown]
 tags: [Tip, Markdown]
 description: "내가 쓸 템플릿을 간단하게 적어둠."
-pin: false
-math: true
-mermaid: true
+
+# 2. 고급 설정 (필요할 때만 true 또는 경로 입력)
+pin: false                   # true로 설정하면 메인화면 최상단에 고정됨 (공지사항 등)
+math: true                   # 수식($$)을 사용할 경우 true
+mermaid: true                # 다이어그램(flowchart)을 그릴 경우 true
+toc: true                    # 오른쪽 목차 표시 여부 (기본값 true)
+comments: false               # 댓글 기능 켜기/끄기
+
+---
 
 1. 포스트 설정 (Front Matter)
 글의 제목, 날짜, 카테고리, 태그 등 블로그 시스템이 인식해야 할 필수 메타데이터를 정의하는 영역.
 
-Markdown
+
+``` Markdown
+# 위 아래에 --- 있어야 적용됨 주석으로 설정을 헤딩 하는것 같음.
 ---
 title: "포스트 제목"
 date: 2026-03-18 09:58:00 +0900
 categories: [Category1, Category2]
 tags: [tag1, tag2]
 description: "이 포스트의 핵심 내용을 한 줄로 요약합니다."
-pin: false
-math: true
-mermaid: true
+
+# 2. 고급 설정 (필요할 때만 true 또는 경로 입력)
+pin: false                   # true로 설정하면 메인화면 최상단에 고정됨 (공지사항 등)
+math: true                   # 수식($$)을 사용할 경우 true
+mermaid: true                # 다이어그램(flowchart)을 그릴 경우 true
+toc: true                    # 오른쪽 목차 표시 여부 (기본값 true)
+comments: false               # 댓글 기능 켜기/끄기
 ---
+```
+
 2. 글의 시작과 개요 (Overview)
 본격적인 내용을 시작하기 전, 독자가 글의 목적을 빠르게 파악할 수 있도록 인용문 형식을 빌려 요약합니다.
 
