@@ -9,35 +9,41 @@ title: About
 permalink: /about/
 ---
 
-### 시스템 정보
+### 🖥️ System Information
 
-터미널 환경에서 `hwaserbit`의 정보를 조회합니다.
+터미널 환경에서 `hwaserbit`의 시스템 스펙과 실행 중인 프로세스를 조회합니다.
 
 ```bash
-root@hwaserbit:~# ./whoami.sh
+root@hwaserbit:~# neofetch --user hwaserbit
 
-[SYSTEM INFO: hwaserbit]
----------------------------
-OS Type    : #Server Infrastructure & Backend
-Hostname   : hwaserbit ( hwa + ser(server) + bit )
-Kernel     : "성실함과 꾸준함" 버전 2025.12
-Uptime     : 오늘도 성장 중... (Since 2004)
-Packages   : #Linux, AWS, Docker, Kubernetes, TroubleShooting(❤️)
-Shell      : 친절한 동료 모드 (/bin/friendly_bash)
-Status     : 모든 시스템 정상 작동 중. 당신과 연결할 준비 완료!
+[SYSTEM INFO: 심화섭 (hwaserbit)]
+-----------------------------------
+OS          : System & Infrastructure Engineer (Aspirant)
+Hostname    : hwaserbit (Hwaseop + Server + Bit)
+Kernel      : Computer Engineering
+Uptime      : Since 2004 (Active & Learning)
+Architecture: Infrastructure, System Security, Virtualization
+Packages    : Linux, Docker, KVM, UFW, Bash Script, Ollama
+Hardware    : Home Server (Intel Arc GPU), DIY Solar monitoring
+Status      : 트러블슈팅 및 아키텍처 설계, 불편함 해결 중 ⚙️
 
 root@hwaserbit:~# _
 ```
 
----
+### 👨‍💻 Background Process
 
-### 연락처
+"코드가 24시간 안전하게 숨 쉴 수 있는 인프라를 설계합니다."
+
+단순히 화면에 보이는 기능을 구현하는 것을 넘어, 시스템의 밑바닥을 뜯어보고 전체 네트워크 흐름을 통제하는 것에 흥미를 느낍니다.
+
+현재 제 방의 홈 서버(Home Server) 환경을 베이스캠프 삼아 다양한 가상화 환경(Docker, KVM)을 구축하고 있으며, 로컬 AI 최적화나 네트워크 보안 정책을 직접 테스트하며 마주치는 에러 로그들을 분석하고 해결하는 과정을 즐깁니다.
+
+이 블로그는 그 치열한 삽질과 트러블슈팅의 아카이브(Archive)입니다.
+
+### 📬 Contact & Links
+
+시스템 장애(트러블슈팅) 공유나 재미있는 인프라/보안 관련 커피챗은 언제나 환영합니다.
+
 - Email: hwaserbit@gmail.com
-- GitHub: https://github.com/hwaserbit
 
----
-
-### 템플릿 샘플
-- https://chirpy.cotes.page/
-
----
+- GitHub: [https://github.com/hwaserbit](https://github.com/hwaserbit){: target="_blank" }
