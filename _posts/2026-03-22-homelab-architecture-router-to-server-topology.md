@@ -4,6 +4,8 @@ date: 2026-03-22 23:27:00 +0900
 categories: [Infrastructure, Architecture]
 tags: [HomeLab, pfSense, Proxmox, ODROID-H4, Intel-Arc-A770, Network, Log]
 series: 홈랩 아키텍처 구축기
+description: "24시간 무중단 인프라의 가용성을 확보하고, 와트당 성능비와 GPU 연산 대역폭을 극대화한 분산형 홈랩 아키텍처 설계 로그"
+
 # 2. 고급 설정 (필요할 때만 true 또는 경로 입력)
 pin: false                   # true로 설정하면 메인화면 최상단에 고정됨 (공지사항 등)
 math: false                   # 수식($$)을 사용할 경우 true
@@ -15,7 +17,7 @@ comments: false               # 댓글 기능 켜기/끄기
 image:
   # 배너 이미지 경로
   path: /assets/img/banners/2026-03-22-homelab-architecture-router-to-server-topology.png
-  alt: Proxmox 기반 가상 라우터와 전용 스토리지, AI 연산 및 IoT 노드가 2.5G 스위치로 연결된 분산형 홈랩 네트워크 구조도입니다. # 시각장애인용 설명 (SEO)
+  alt: "Proxmox 기반 가상 라우터와 전용 스토리지, AI 연산 및 IoT 노드가 2.5G 스위치로 연결된 분산형 홈랩 네트워크 구조도입니다." # 시각장애인용 설명 (SEO)
 
 ---
 
@@ -145,5 +147,5 @@ Arc A770의 도입과 ReBAR 최적화를 통해 로컬 AI 컴퓨팅 기반을 �
 ```bash
 root@hwaserbit:~# uptime -p
 up 4 days, 19 minutes
-root@hwaserbit:~# exit
+root@hwaserbit:~# reboot
 ```
