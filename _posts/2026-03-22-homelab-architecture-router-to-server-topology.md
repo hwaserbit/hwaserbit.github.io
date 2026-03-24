@@ -48,35 +48,38 @@ root@hwaserbit:~# ip route show && brctl show
 인프라의 중심은 Proxmox 하이퍼바이저 위에서 동작하는 **pfSense VM**이 담당합니다. 외부 인터넷 트래픽을 가장 먼저 수신하고, 내부 2.5G L2 스위치를 통해 각 물리적 노드로 패킷을 라우팅하는 구조입니다.
 
 ```mermaid
-graph TD
-    %% 스타일 정의 (각진 노드 및 색상 테마)
-    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
-    classDef wan fill:#ffcccc,stroke:#cc0000,stroke-width:2px;
-    classDef virt fill:#e6f3ff,stroke:#0066cc,stroke-width:1px;
-    classDef switch fill:#ffffcc,stroke:#cccc00,stroke-width:2px;
-    classDef physical fill:#e6ffcc,stroke:#00cc00,stroke-width:1px;
-
-    %% 노드 정의
-    Internet[외부 인터넷]:::wan
+flowchart TD
+    %% 1. 스타일 정의 (다크모드에서도 잘 보이도록 텍스트 색상 color:#111 강제 지정)
+    classDef wan fill:#ffcccc,stroke:#cc0000,stroke-width:2px,color:#111,font-weight:bold;
+    classDef virt fill:#e6f3ff,stroke:#0066cc,stroke-width:2px,color:#111;
+    classDef switch fill:#fffbcc,stroke:#b3b300,stroke-width:2px,color:#111,font-weight:bold;
+    classDef physical fill:#e6ffcc,stroke:#00cc00,stroke-width:2px,color:#111;
     
-    subgraph VirtHost [8505 가상화 서버 - Proxmox VE]
+    %% 서브그래프(Proxmox) 테두리 스타일 지정
+    style VirtHost fill:transparent,stroke:#888,stroke-width:2px,stroke-dasharray: 5 5
+
+    %% 2. 노드 정의 (도형 모양 변경 및 이모지 추가로 퀄리티 업그레이드)
+    Internet([☁️ 외부 인터넷]):::wan
+    
+    subgraph VirtHost [🖥️ 8505 가상화 서버 - Proxmox VE]
         direction TB
-        pfSense[pfSense VM<br/>메인 게이트웨이 / 방화벽]:::virt
-        UbuntuVM[Ubuntu VM<br/>관리 / 역방향 프록시]:::virt
-        pfSense -. Reverse Proxy .- UbuntuVM
+        pfSense[🛡️ pfSense VM<br/>메인 게이트웨이 / 방화벽]:::virt
+        UbuntuVM[🔄 Ubuntu VM<br/>관리 / 역방향 프록시]:::virt
+        pfSense -.-> |Reverse Proxy| UbuntuVM
     end
     
-    Switch[ipTIME HG25008T1<br/>2.5G 비관리형 스위치]:::switch
+    %% 스위치는 육각형(Hexagon)으로 만들어 중앙 허브 느낌 강조
+    Switch{{🖧 ipTIME HG25008T1<br/>2.5G 비관리형 스위치}}:::switch
     
-    H4Plus[ODROID-H4 PLUS<br/>스토리지 코어]:::physical
-    Compute[i5-13600K Node<br/>미디어 / AI 연산]:::physical
-    IoT[Raspberry Pi 4<br/>HAOS]:::physical
-    Client[FIREBAT A8<br/>Admin Client]:::physical
-    AP[ASUS TUF BE6500]:::physical
+    H4Plus[💾 ODROID-H4 PLUS<br/>스토리지 코어]:::physical
+    Compute[🧠 i5-13600K Node<br/>미디어 / AI 연산]:::physical
+    IoT[🏠 Raspberry Pi 4<br/>HAOS]:::physical
+    Client[💻 FIREBAT A8<br/>Admin Client]:::physical
+    AP[📡 ASUS TUF BE6500]:::physical
 
-    %% 연결 정의
-    Internet ==> |WAN| pfSense
-    pfSense ==> |LAN 2.5G Trunk| Switch
+    %% 3. 연결 정의 (중앙 정렬을 위해 스위치로 가는 선의 가중치를 높임 ===>)
+    Internet ===> |WAN| pfSense
+    pfSense ===> |LAN 2.5G Trunk| Switch
     
     Switch --- H4Plus
     Switch --- Compute
@@ -130,11 +133,13 @@ graph TD
 - **역할 및 설계**: 서버 노드들의 상태와 종속되지 않는 독립적인 전원/네트워크 관리를 위해 구축했습니다. Node-RED, MQTT 애드온을 통해 자택내 IoT 센서와 서버 인프라, 태양광 모니터링 연결하는 미들웨어 역할을 수행합니다.
 
 > **[Troubleshooting] Docker 컨테이너에서 HAOS(Raspberry Pi 4)로 회귀한 아키텍처적 이유**
+> 
 > 초기에는 8505 Ubuntu VM 내에서 Docker 브릿지 네트워크를 활용해 Home Assistant(HA)를 배포했습니다. 하지만 운영 과정에서 컨테이너 격리 환경이 가지는 명확한 네트워크 한계에 직면하여 물리적 HAOS 환경으로 전면 재구축을 단행했습니다.
 > 
 > 1. **Auto-Discovery 프로토콜의 단절 및 우회책의 한계**: 브릿지 네트워크의 물리적 격리 특성상, mDNS 및 브로드캐스트 패킷 기반의 자택내 기기 자동 탐색(Auto-Discovery)이 원천 차단됩니다. Docker의 Host Network 모드로 매핑하여 패킷 단절을 우회하는 방안을 고려할 수 있으나, 이는 컨테이너 배포의 핵심인 네트워크 격리(Isolation) 이점을 완전히 훼손하며, 호스트 포트 충돌 및 방화벽 제어권의 복잡성만 가중시키므로 시스템 아키텍처 관점에서 완전히 배제했습니다.
 > 2. **Ingress 라우팅 부재 및 Add-on 통합 실패**: 가장 치명적인 결함은 내장 Ingress의 부재였습니다. 외부망에서 리버스 프록시를 통해 HA 대시보드에 접근할 경우, 내부망에서는 정상 작동하던 사이드바 연동 애드온(별도 컨테이너)들로 트래픽 라우팅이 단절되어 시스템 제어권이 반쪽짜리가 되는 문제가 발생했습니다. Nginx를 활용해 각 애드온 컨테이너에 대한 리버스 프록시 룰셋을 수동으로 매핑하여 자체적인 Ingress를 구현하는 것은 기술적으로 가능합니다. 하지만 이러한 커스텀 구성은 향후 유지보수 및 운영 복잡도(Operational Complexity)를 불필요하게 가중시킵니다. 이미 HAOS 생태계에서 완벽하게 제공하는 내장 인그레스 컨트롤러를 두고, 마치 바퀴를 재발명(Reinventing the wheel)하는 것처럼 귀중한 엔지니어링 리소스를 낭비할 이유가 없으므로, 다양한 트러블슈팅 경우의 수를 검토한 끝에 해당 커스텀 구성을 배제하는 것이 아키텍처 관점에서 가장 합리적이라고 판단했습니다.
 > 3. **물리적 노드 독립(Decoupling)과 HAOS의 당위성**: Home Assistant 진영에서 기존의 독립적인 Supervisor 설치 방식을 사실상 폐기하고, 전용 OS(HAOS) 환경을 강제하는 엔지니어링적 명분을 명확히 체감했습니다. 다양한 범용 리눅스 환경에서 발생하는 패키지 충돌 및 종속성(Dependency Hell) 문제를 원천 차단하기 위한 구조적 결단이었던 것입니다. 현재 운용 중인 8505 가상화 노드의 한정된 가용 리소스를 고려할 때 억지로 VM을 추가 할당하는 것은 비효율적이라 판단했습니다. 이에 네트워크 인그레스 라우팅과 하드웨어 제어권을 완벽하게 보장받기 위해, Raspberry Pi 4를 HAOS 전용 베어메탈 컨트롤러로 완전히 독립시키는 분산 아키텍처를 채택했습니다.
+
 ### 3.5. 관리용 윈도우 클라이언트 (FIREBAT A8 8845HS)
 인프라 내부망 관리 및 단순 클라이언트 단말 역할을 수행하는 미니 PC입니다.
 - **OS**: Windows 11 Pro (Clean Install)
@@ -143,6 +148,7 @@ graph TD
   - 서버랙 근처에 배치하여 물리적 유지보수 및 프린트, 웹 서핑을 위한 관리용 터미널로 운용합니다. 메인 작업은 분리된 환경(MacBook)에서 WireGuard VPN을 통해 수행하므로, 해당 기기의 네트워크 권한은 최소한으로 격리되어 있습니다.
 
 > **보안 위협 통제 (Risk Management)**
+> 
 > 해당 중국산 미니 PC 라인업은 출고 단계에서 OS 악성코드가 삽입되거나 BIOS 레벨의 백도어가 존재한다는 공급망 공격(Supply Chain Attack) 리스크가 꾸준히 제기된 바 있습니다. 하지만 시스템 아키텍처 관점에서 해당 위협은 완벽하게 통제되고 있습니다.
 > 
 > 1. **OS 초기화 및 격리**: 기기 도입 즉시 디스크 파티션을 로우레벨 수준으로 초기화하고 OS를 클린 설치하여 소프트웨어 계층의 위협을 1차적으로 제거했습니다.
