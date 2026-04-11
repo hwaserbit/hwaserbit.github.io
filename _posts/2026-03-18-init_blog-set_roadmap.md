@@ -10,6 +10,13 @@ math: true                   # 수식($$)을 사용할 경우 true
 mermaid: true                # 다이어그램(flowchart)을 그릴 경우 true
 toc: true                    # 오른쪽 목차 표시 여부 (기본값 true)
 comments: false               # 댓글 기능 켜기/끄기
+
+# 3. 이미지/배너 설정
+image:
+  # 배너 이미지 경로
+  path: /assets/img/banners/2026-03-18-init_blog-set_roadmap.png
+  alt: "이 글의 설명을 이미지화한 배경 위로 'hwaserbit' 블로그의 초기화 과정 및 향후 로드맵 계획을 출력하고 있는 가상의 터미널 창 이미지입니다." # 시각장애인용 설명 (SEO)
+
 ---
 
 > **TL;DR (요약 로그)**
