@@ -3,6 +3,7 @@ title: "root@hwaserbit:~# init_blog && set_roadmap"
 date: 2026-03-18 23:08:00 +0900
 categories: [Vision, Log]
 tags: [컴퓨터공학과, 진로, 회고]
+description: "단순한 코딩을 넘어 인프라와 보안의 뼈대를 설계하는 'hwaserbit'의 치열한 시스템 구축 및 트러블슈팅 지식 베이스입니다."
 
 # 2. 고급 설정 (필요할 때만 true 또는 경로 입력)
 pin: false                   # true로 설정하면 메인화면 최상단에 고정됨 (공지사항 등)
