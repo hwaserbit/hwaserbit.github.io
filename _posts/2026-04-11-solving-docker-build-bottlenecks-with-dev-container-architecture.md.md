@@ -23,7 +23,7 @@ comments: false               # 댓글 기능 켜기/끄기
 # 3. 이미지/배너 설정
 image:
   # 배너 이미지 경로
-  path: /assets/img/banners/2026-04-11-solving-docker-build-bottlenecks-with-dev-container-architecture.md.png
+  path: /assets/img/banners/2026-04-11-solving-docker-build-bottlenecks-with-dev-container-architecture.png
   alt: "도커 빌드 병목 현상을 해결하기 위해 개발 환경(DEV)과 운영 환경(PROD)을 분리하는 Dev Container 아키텍처 다이어그램." # 시각장애인용 설명 (SEO)
 
 
