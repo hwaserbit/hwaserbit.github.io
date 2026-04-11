@@ -150,6 +150,8 @@ flowchart TD
 
 다음 글에서는 IOMMU 기반의 **PCIe Passthrough(물리 인터페이스 직접 할당)** 설정 과정과, 라우터 VM 장애 시에도 호스트 제어권을 보장하는 **Out-of-Band(관리망 분리)** 등 인프라 가용성 확보를 위한 핵심 아키텍처 구현을 중점적으로 다루겠습니다.
 
+<br>
+
 ```bash
 root@hwaserbit:~# uptime -p
 up 6 days, 48 minutes

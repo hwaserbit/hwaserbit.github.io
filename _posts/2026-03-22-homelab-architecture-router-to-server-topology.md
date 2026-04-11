@@ -162,6 +162,8 @@ flowchart TD
 
 Arc A770의 도입과 ReBAR 최적화를 통해 로컬 AI 컴퓨팅 기반을 성공적으로 마련했으며, ODROID-H4 PLUS로 스토리지의 와트당 성능비(Power Efficiency)를 극대화하여 24시간 운영에 따른 유지 비용의 비효율성을 근본적으로 해결했습니다. 향후에는 물리적 백업 라우터(pfSense) 환경을 도입하여 네트워크 고가용성(HA)을 확보하고, 현재 과제로 남아있는 분산 노드 간의 데이터 동기화 및 백업 파이프라인을 현실적인 수준에서 점진적으로 설계하여 시스템의 신뢰성을 확보해 나갈 계획입니다.
 
+<br>
+
 ```bash
 root@hwaserbit:~# uptime -p
 up 4 days, 19 minutes

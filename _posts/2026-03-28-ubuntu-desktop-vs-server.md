@@ -161,6 +161,8 @@ root@hwaserbit:~# netplan try --timeout 120
 * [Netplan Official Documentation](https://netplan.io/design/)
 * [Systemd Networkd vs NetworkManager (Arch Wiki)](https://wiki.archlinux.org/title/Network_configuration)
 
+<br>
+
 ```bash
 root@hwaserbit:~# uptime -p
 up 5 days, 23 hours, 49 minutes

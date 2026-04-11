@@ -72,6 +72,8 @@ AI는 훌륭한 비즈니스 로직을 빠르게 짜낼 수 있지만, 그 코�
 
 매일 부딪히고 깨지며 얻은 시스템 지식들을 이 공간에 꾸준하고 투명하게 아카이빙하겠습니다.
 
+<br>
+
 ```bash
 root@hwaserbit:~# tail -f /var/log/hwaserbit_growth.log
 ```
