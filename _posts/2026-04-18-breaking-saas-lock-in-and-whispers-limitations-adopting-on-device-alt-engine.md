@@ -24,7 +24,7 @@ comments: false               # 댓글 기능 켜기/끄기
 image:
   # 배너 이미지 경로
   path: /assets/img/banners/2026-04-18-breaking-saas-lock-in-and-whispers-limitations-adopting-on-device-alt-engine.png
-  alt: '"SaaS 종속성 및 Whisper 문제 해결을 위한 `Alt` 도입"을 주제로 한 프레젠테이션 이미지입니다. 온디바이스 AI 인퍼런스를 통해 100% 로컬 격리 전사를 구현하는 과정이 중앙의 화살표 다이어그램으로 시각화되어 있습니다.' # 시각장애인용 설명 (SEO)
+  alt: "SaaS 종속성 및 Whisper 문제 해결을 위한 Alt 도입을 주제로 한 프레젠테이션 이미지입니다. 온디바이스 AI 인퍼런스를 통해 100% 로컬 격리 전사를 구현하는 과정이 중앙의 화살표 다이어그램으로 시각화되어 있습니다." # 시각장애인용 설명 (SEO)
 
 
 
