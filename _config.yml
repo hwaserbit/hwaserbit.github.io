@@ -155,8 +155,6 @@ baseurl: ""
 # 마크다운 엔진 명시
 markdown: kramdown
 
-# mermaid 사용
-mermaid: true
 
 # ------------ 이 아래는 건드리지 마세요 ------------------
 
