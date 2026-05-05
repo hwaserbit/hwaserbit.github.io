@@ -26,7 +26,7 @@ Architecture: Infrastructure, System Security, Virtualization
 Certification: Linux Master 2nd Class (Issued: 2026-04-03)
 Packages    : Linux, Docker, KVM, UFW, Bash Script, Ollama
 Hardware    : Home Server (Intel Arc GPU), DIY Solar monitoring
-Status      : 트러블슈팅 및 아키텍처 설계, 불편함 해결 중 ⚙️
+Status      : 트러블슈팅 및 아키텍처 설계, 문제 해결 중 ⚙️
 
 root@hwaserbit:~# _
 ```
@@ -43,8 +43,14 @@ root@hwaserbit:~# _
 
 ### 📬 Contact & Links
 
-시스템 장애(트러블슈팅) 공유나 재미있는 인프라/보안 관련 커피챗은 언제나 환영합니다. (답장은 어려울 수 있습니다.)
+<!-- 시스템 장애(트러블슈팅) 공유나 재미있는 인프라/보안 관련 커피챗은 언제나 환영합니다. (답장은 어려울 수 있습니다.) -->
 
 - Email: hwaserbit@gmail.com
 
 - GitHub: [https://github.com/hwaserbit](https://github.com/hwaserbit){: target="_blank" }
+
+<br><br>
+
+### ⚠️ Disclaimer
+
+이 블로그의 모든 내용은 개인적인 학습 및 실험 기록입니다. 작성 시점 기준이며 틀린 내용이 있을 수 있고, 이로 인한 문제에 대해 책임지지 않습니다. 참고용으로만 활용해 주세요.
