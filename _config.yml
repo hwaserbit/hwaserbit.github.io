@@ -77,35 +77,35 @@ analytics:
 pageviews:
   provider: # 현재 'goatcounter'만 지원합니다
 
-# 선호하는 색 구성표 설정입니다.
-#
-# 참고: 비워두면 시스템에서 기본적으로 선호하는 색상이 적용됩니다.
-# 또한 사이드바 왼쪽 하단에 어두운 테마와 밝은 테마를 전환할 수 있는 토글 버튼이 표시됩니다.
-#
-# 사용 가능한 옵션:
-#
-# 밝은 — 밝은 색 구성표 사용
-# 어두운 — 어두운 색 구성표 사용
-#
-theme_mode: # [light | dark]
+  # 선호하는 색 구성표 설정입니다.
+  #
+  # 참고: 비워두면 시스템에서 기본적으로 선호하는 색상이 적용됩니다.
+  # 또한 사이드바 왼쪽 하단에 어두운 테마와 밝은 테마를 전환할 수 있는 토글 버튼이 표시됩니다.
+  #
+  # 사용 가능한 옵션:
+  #
+  # 밝은 — 밝은 색 구성표 사용
+  # 어두운 — 어두운 색 구성표 사용
+  #
+  theme_mode: # [light | dark]
 
-# 미디어 리소스용 CDN 엔드포인트입니다.
-# CDN URL이 할당되면
-# 모든 미디어 리소스(사이트 아바타, 게시물 이미지, 오디오 및 비디오 파일)의 '/'로 시작하는 경로에 추가됩니다.
-#
-# 예: 'https://cdn.com'
-cdn: # "https://chirpy-img.netlify.app"
+  # 미디어 리소스용 CDN 엔드포인트입니다.
+  # CDN URL이 할당되면
+  # 모든 미디어 리소스(사이트 아바타, 게시물 이미지, 오디오 및 비디오 파일)의 '/'로 시작하는 경로에 추가됩니다.
+  #
+  # 예: 'https://cdn.com'
+  cdn: # "https://chirpy-img.netlify.app"
 
-# 사이드바의 아바타(avatar), 로컬 또는 CORS 리소스 지원
-avatar: "/commons/avatar.png"
-#avatar: /assets/img/1.png
+  # 사이드바의 아바타(avatar), 로컬 또는 CORS 리소스 지원
+  avatar: "/commons/avatar.png"
+  #avatar: /assets/img/1.png
 
-# SEO `og:image` 메타 태그에 사용되는 사이트 전체 소셜 미리보기 이미지의 URL입니다.
-# 프런트 매터에서 사용자 지정 `page.image`로 재정의할 수 있습니다.
-social_preview_image: # 문자열, 로컬 또는 CORS 리소스
+  # SEO `og:image` 메타 태그에 사용되는 사이트 전체 소셜 미리보기 이미지의 URL입니다.
+  # 프런트 매터에서 사용자 지정 `page.image`로 재정의할 수 있습니다.
+  social_preview_image: # 문자열, 로컬 또는 CORS 리소스
 
-# 부울 타입, 게시물 목차(TOC) 표시 여부를 결정하는 전역 스위치입니다.
-toc: true
+  # 부울 타입, 게시물 목차(TOC) 표시 여부를 결정하는 전역 스위치입니다.
+  toc: true
 
 comments:
   # 게시물 댓글 시스템을 활성화/비워두는 전역 스위치입니다. 비워두면 비활성화됩니다.
