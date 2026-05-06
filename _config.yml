@@ -58,21 +58,20 @@ webmaster_verifications:
 
 # 웹 분석 설정
 analytics:
-
-google:
-  id: # Google Analytics ID를 입력하세요
-goatcounter:
-  id: # GoatCounter ID를 입력하세요
-umami:
-  id: # Umami ID를 입력하세요
-  domain: # Umami 도메인을 입력하세요
-matomo:
-  id: # Matomo ID를 입력하세요
-  domain: # Matomo 도메인을 입력하세요
-cloudflare:
-  id: # Cloudflare 웹 분석 토큰을 ​​입력하세요
-fathom:
-  id: # Fathom 사이트 ID를 입력하세요
+  google:
+    id: # Google Analytics ID를 입력하세요
+  goatcounter:
+    id: # GoatCounter ID를 입력하세요
+  umami:
+    id: # Umami ID를 입력하세요
+    domain: # Umami 도메인을 입력하세요
+  matomo:
+    id: # Matomo ID를 입력하세요
+    domain: # Matomo 도메인을 입력하세요
+  cloudflare:
+    id: # Cloudflare 웹 분석 토큰을 ​​입력하세요
+  fathom:
+    id: # Fathom 사이트 ID를 입력하세요
 
 # 페이지 조회수 설정
 pageviews:
