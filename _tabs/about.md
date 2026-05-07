@@ -9,7 +9,7 @@ title: About
 permalink: /about/
 ---
 
-### 🖥️ System Information
+### 🖥️ System Information 
 
 터미널 환경에서 `hwaserbit`의 시스템 스펙과 실행 중인 프로세스를 조회합니다.
 
