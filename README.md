@@ -3,7 +3,7 @@
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
-**친절한 서버 엔지니어, hwaserbit의 기술 블로그 저장소입니다.**
+**hwaserbit의 기술 블로그 저장소입니다.**
 이 블로그는 [Jekyll](https://jekyllrb.com/)과 [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/) 테마를 사용하여 구축되었습니다.
 
 > **🌐 Live Blog:** [hwaserbit.com](https://hwaserbit.com)
