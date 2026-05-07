@@ -97,7 +97,7 @@ pageviews:
   cdn: # "https://chirpy-img.netlify.app"
 
   # 사이드바의 아바타(avatar), 로컬 또는 CORS 리소스 지원
-  avatar: "/commons/avatar.png"
+  avatar: "/assets/img/avatar.png"
   #avatar: /assets/img/1.png
 
   # SEO `og:image` 메타 태그에 사용되는 사이트 전체 소셜 미리보기 이미지의 URL입니다.
