@@ -18,15 +18,16 @@ root@hwaserbit:~# neofetch --user hwaserbit
 
 [SYSTEM INFO: 심화섭 (hwaserbit)]
 -----------------------------------
-OS          : System & Infrastructure Engineer (Aspirant)
+OS          : Infrastructure & Security Engineer
 Hostname    : hwaserbit (Hwaseop + Server + Bit)
-Kernel      : Computer Engineering (Certified: Linux Master L2)
-Uptime      : Since 2004 (Active & Learning)
-Architecture: Infrastructure, System Security, Virtualization
-Certification: Linux Master 2nd Class (Issued: 2026-04-03)
-Packages    : Linux, Docker, KVM, UFW, Bash Script, Ollama
-Hardware    : Home Server (Intel Arc GPU), DIY Solar monitoring
-Status      : 트러블슈팅 및 아키텍처 설계, 문제 해결 중 ⚙️
+Kernel      : 컴퓨터공학과 2학년 재학
+Certified   : 리눅스 마스터 2급
+Uptime      : unless-stopped
+Architecture: Homelab · Virtualization · Security · Infrastructure
+Packages    : Linux, Docker, KVM, Proxmox, Ollama, Bash
+Hardware    : 자체 구축 홈랩 서버 (Intel Arc GPU, 태양광 모니터링)
+Status      : Troubleshooting... ⚙️
+
 
 root@hwaserbit:~# _
 ```
